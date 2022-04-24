@@ -1,0 +1,86 @@
+/*
+	Syntax for CSS:
+
+	selector {
+		property : value; <-- called a declaration
+		property : value	
+	}
+
+selectors= id, class, tag, universal
+
+	universal *- targeting all elements
+*/
+
+* {
+	font-family: "Roboto", sans-serif;
+
+}
+
+h1, h3, h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid #d4af37;
+	border-radius: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#landing {
+	/*vh- viewport height, a determined or measured percentage of the height of the device you are viewing your webpage in*/
+	height: 80vh;
+
+	/*flexbox- will allow us to arange or layout of the elements inside our landing section vertically and horizontally*/
+	/*by default, display:  flex, arranges elemets inside the parent element*/
+	display: flex; 
+	/*flex direction changes the direction of the elements inside an element with display: flex*/
+	/*flex-direction:  column- arranges the flex items into a column*/
+	flex-direction: column;
+	/*align items- arranges element vertically if the flex items are in a row, however it arranges elements horizontally if the flex items are in a column*/
+	/*align items center- arranges all flex items in to be centered horizontally*/
+	align-items: center;
+
+	/*
+		justify-content- arranges elements horizontally if the flex items are in a row. however, it arranges elements horizontally if the flex items are in a column
+	*/
+
+	justify-content: center;
+
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #FFF08D;
+	text-shadow: 5px 5px #d4af37;
+
+}
+
+.tools {
+	/*border- line around the element*/
+	border: 5px solid #FFF08D;
+	/*margin- space outside the element*/
+	margin: 20px;
+	/*padding- space inside the element*/
+	padding: 25px;
+	height: 200px;
+	/*percentage as a measurement for width is based on the total width of the parent element*/
+	width: 90%;
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*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*/
